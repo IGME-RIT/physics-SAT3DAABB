@@ -506,8 +506,8 @@ void init()
 	obj2->SetScale(glm::vec3(0.20f, 0.20f, 0.20f));
 
 	// Read in the shader code from a file.
-	std::string vertShader = readShader("VertexShader.glsl");
-	std::string fragShader = readShader("FragmentShader.glsl");
+	std::string vertShader = readShader("../VertexShader.glsl");
+	std::string fragShader = readShader("../FragmentShader.glsl");
 
 	// createShader consolidates all of the shader compilation code
 	vertex_shader = createShader(vertShader, GL_VERTEX_SHADER);
